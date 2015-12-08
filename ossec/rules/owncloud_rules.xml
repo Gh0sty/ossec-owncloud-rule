@@ -1,0 +1,22 @@
+<!-- ownCloud Log messages -->
+<group name="syslog,owncloud,">
+  <rule id="60000" level="0">
+    <decoded_as>owncloud</decoded_as>
+    <description>ownCloud messages grouped.</description>
+  </rule>
+
+  <rule id="60001" level="5">
+    <if_sid>60000</if_sid>
+    <match>Login failed</match>
+    <description>ownCloud Login failed.</description>
+    <group>authentication_failed,</group>
+  </rule>
+
+  <rule id="60002" level="10">
+    <if_matched_sid>60001</if_matched_sid>
+    <same_source_ip />
+    <description>Multiple ownCloud Login failures.</description>
+    <group>authentication_failures,</group>
+  </rule>
+
+</group>
