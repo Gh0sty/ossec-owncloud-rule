@@ -1,7 +1,7 @@
 # ossec-owncloud-rule
 OSSEC Rule and Decoder for ownCloud 8
 
-Below port by SunboX https://github.com/SunboX
+Below part by SunboX https://github.com/SunboX
 
 ownCloud log file decoder and rules for OSSEC (Open Source SECurity)
 One of the main features of OSSEC is monitoring system and application logs. This repository covers the decoder and rules for a ownCloud service.
