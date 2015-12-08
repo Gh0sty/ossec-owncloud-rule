@@ -1,6 +1,7 @@
 <!-- ownCloud decoder.
   - Example:
   - {"reqId":"j+pfr8UO7oyhZCTfMguS","remoteAddr":"12.345.67.890","app":"core","message":"Login failed: 'OSSEC' (Remote IP: '12.345.67.890')","level":2,"time":"2015-12-08T17:35:18+01:00"}
+  - Extract the IP of a failed Login
   -->
 <decoder name="owncloud">
   <prematch>^{"reqId":"(\.+)"message":"Login failed:(\.+)\(Remote IP: '</prematch>
